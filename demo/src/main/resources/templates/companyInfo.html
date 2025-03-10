@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Info</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Queste sono le info riguardanti la nostra azienda</h1>
+    </header>
+
+    <main>
+        <ul>
+            <li>Nome: <span th:text="${name}"></span></li>
+            <li>Numero di telefono: <span th:text="${phoneNumber}"></span></li>
+            <li>Email: <span th:text="${email}"></span></li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
