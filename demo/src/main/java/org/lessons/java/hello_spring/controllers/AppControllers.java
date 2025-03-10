@@ -28,4 +28,14 @@ public class AppControllers {
         model.addAttribute("email", name + "@gmail.com");
         return "companyInfo";
     }
+
+    @GetMapping("/staff")
+    public String staff(@RequestParam(name = "name") String name, Model model) {
+        // aggiungo gli attributi a model
+        model.addAttribute("name", name);
+        model.addAttribute("surname", "Rossi");
+        model.addAttribute("role", "pizzaiolo");
+        model.addAttribute("email", name + "@gmail.com");
+        return "staff";
+    }
 }

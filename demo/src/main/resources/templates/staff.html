@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Questo è il nostro staff</h1>
+    </header>
+
+    <main>
+        <ul>
+            <li>Nome: <span th:text="${name}"></span></li>
+            <li>Cognome: <span th:text="${surname}"></span></li>
+            <li>Ruolo: <span th:text="${role}"></span></li>
+            <li>Email: <span th:text="${email}"></span></li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
