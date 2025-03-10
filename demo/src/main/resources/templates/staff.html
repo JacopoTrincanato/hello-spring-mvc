@@ -15,10 +15,10 @@
 
     <main>
         <ul>
-            <li>Nome: <span th:text="${name}"></span></li>
-            <li>Cognome: <span th:text="${surname}"></span></li>
-            <li>Ruolo: <span th:text="${role}"></span></li>
-            <li>Email: <span th:text="${email}"></span></li>
+            <li th:text="'Nome: ' + ${name}"></li>
+            <li th:text="'Cognome: ' + ${surname}"></li>
+            <li th:text="'Ruolo: ' + ${role}"></li>
+            <li th:text="'Email: ' + ${email}"></li>
         </ul>
     </main>
 

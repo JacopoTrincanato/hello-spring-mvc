@@ -15,9 +15,9 @@
 
     <main>
         <ul>
-            <li>Nome: <span th:text="${name}"></span> S.p.A</li>
-            <li>Numero di telefono: <span th:text="${phoneNumber}"></span></li>
-            <li>Email: <span th:text="${email}"></span></li>
+            <li th:text="'Nome: ' + ${name}"></li>
+            <li th:text="'Numero di telefono: ' + ${phoneNumber}"></li>
+            <li th:text="'Email: ' + ${email}"></li>
         </ul>
     </main>
 
